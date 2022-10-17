@@ -11,8 +11,8 @@ def print_hi(name):
 def print_version(package):
     print(package.__version__)
 
-def multiplication(W, x):
-    q = np.multiply(W, x)
+def multiplication(F, S):
+    q = np.dot(F, S)
     print(q)
     return q
 def prediction(q):
@@ -24,8 +24,9 @@ def prediction(q):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    print_hi('Urs')
     print_version(np)
-    multiplication(W,W)
+    multiplication(W,x)
+    multiplication(x,W)
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
