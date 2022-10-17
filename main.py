@@ -1,16 +1,31 @@
-# This is a sample Python script.
+# We will first do some experiments in numpy, no worries there will be enough tensorflow soon.
+import numpy as np
 
-# Press Umschalt+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
+x = np.array([[0.2], [2]])
+W = np.array([[-0.3, 0.8]])
+y = 1
 
 def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Strg+F8 to toggle the breakpoint.
+    print(f'Hi, {name}')
+
+def print_version(package):
+    print(package.__version__)
+
+def multiplication(W, x):
+    q = np.multiply(W, x)
+    print(q)
+    return q
+def prediction(q):
+    f_1 = q
+    y_pred = multiplication(q, f_1)
+
+    return y_pred
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     print_hi('PyCharm')
+    print_version(np)
+    multiplication(W,W)
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
